@@ -38,11 +38,10 @@ print(f"Location {loc}")
 
 # print("Weather Forecast")
 # print("================")
-# t = response.json()['data']['timelines'][0]['intervals'][0]['values']['temperature']
-
+# t = response.json()['data']['values']['temperature']
+# print(t)
 # results = response['data']
 # print(results['values']['temp'])
 
-
-    # 40.10538439053338, -75.41601923360118
-    # curl --request GET --url 'https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=CR97UqteIZC1gKXDeZqUgYUNfeL3B130'
+for a,value in enumerate(results['values']):
+    print(value,results['values'][value])
