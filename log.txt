@@ -1,0 +1,5 @@
+temperature04-23-2024 22:14:01humidity
+04-23-2024 22:16:27temperature
+04-23-2024 22:16:27humidity
+04-23-2024 22:16:27temperature
+04-23-2024 22:16:27

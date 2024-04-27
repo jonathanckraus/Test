@@ -1,6 +1,9 @@
+from time import strftime
+def add(a, b):
+    return a + b
 a=3
 b=4
-print(f"The sum is {a+b}")
+print(f"The sum is {add(a, b)}")
 
 import requests
 
@@ -16,7 +19,7 @@ headers = {"accept": "application/json"}
 response = requests.get(url, headers=headers)
 
 # Print the response
-print(response.text)
+# print(response.text)
 
 
 print("Weather Forecast")
@@ -35,7 +38,6 @@ print(f"Location {loc}")
 # Print the response
 # print(response.text)
 
-
 # print("Weather Forecast")
 # print("================")
 # t = response.json()['data']['values']['temperature']
@@ -43,5 +45,15 @@ print(f"Location {loc}")
 # results = response['data']
 # print(results['values']['temp'])
 
+my_values = ('temperature','humidity' )
 for a,value in enumerate(results['values']):
-    print(value,results['values'][value])
+    if value in my_values:
+        print(value,results['values'][value])
+        with open('log.txt', 'a') as f:
+            f.write(value)
+            f.write('\n')
+            formatted_time = strftime("%m-%d-%Y %H:%M:%S")
+            f.write(formatted_time)
+
+
+        
