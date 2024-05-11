@@ -51,9 +51,12 @@ for a,value in enumerate(results['values']):
         print(value,results['values'][value])
         with open('log.txt', 'a') as f:
             f.write(value)
+            f.write('  ')
+            f.write(str(results['values'][value]))
             f.write('\n')
             formatted_time = strftime("%m-%d-%Y %H:%M:%S")
             f.write(formatted_time)
+            f.write('\n')
 
 
         

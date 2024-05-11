@@ -13,7 +13,7 @@ for item in(my_list):
 print(my_list[1])
 # Enumerate through the list and print each item along with its index
 for index, item in enumerate(my_list):
-    # sum += int(item)    
+    sum += index    
     print(f"Item at index {index}: {item} sum {sum}")
 formatted_time = strftime("%m-%d-%Y %H:%M:%S")
 print("date and time:", formatted_time)
