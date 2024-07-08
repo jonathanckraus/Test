@@ -57,6 +57,3 @@ for a,value in enumerate(results['values']):
             formatted_time = strftime("%m-%d-%Y %H:%M:%S")
             f.write(formatted_time)
             f.write('\n')
-
-
-        
