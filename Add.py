@@ -10,7 +10,7 @@ my_list = ('Acai','Ackee','Apple','Apricot','Avocado','Babaco','Banana','Bilberr
 
 for item in(my_list):
     print(item)
-print(my_list[1])
+# print(my_list[6])
 # Enumerate through the list and print each item along with its index
 for index, item in enumerate(my_list):
     sum += index    
