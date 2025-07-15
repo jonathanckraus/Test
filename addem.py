@@ -12,7 +12,7 @@ API_KEY = "CR97UqteIZC1gKXDeZqUgYUNfeL3B130"
 
 # Replace with the desired location's latitude and longitude
 LOCATION = "king of prussia"
-
+LOCATION = "Brookline Massachusetts"
 # Make an API request to get weather forecast
 url = f"https://api.tomorrow.io/v4/weather/realtime?location={LOCATION}&units=imperial&apikey={API_KEY}"
 headers = {"accept": "application/json"}
