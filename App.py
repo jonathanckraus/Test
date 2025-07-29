@@ -12,18 +12,20 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <h1>Submit Button Example</h1>
+
     <form method="POST">
-        <label for="input">Enter something:</label>
-        <input type="text" id="input" name="user_input" required>
-        <button type="submit">Submit</button>
+        <button type="submit" name="button1">Button 1</button>
+        <button type="submit" name="button2">Button 2</button>
+        <button type="submit" name="button3">Button 3</button>
     </form>
-    {% if response %}
-        <p>You submitted: {{ response }}</p>
-    {% endif %}
+    
+        <p>You submitted: {{ response}}</p>
+    
 </body>
 </html>
 """
-
+# {% if response %}
+# {% endif %}
 @app.route("/", methods=["GET", "POST"])
 def index():
     response = None
@@ -45,4 +47,4 @@ if __name__ == "__main__":
 # Run the script: python app.py.
 # Open your browser and go to http://127.0.0.1:5000.
 
-# This is a basic example, but you can expand it to handle more complex interactions!
+# This is a basic example, but you can
