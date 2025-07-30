@@ -25,7 +25,8 @@ def send_ir_command(button):
     command.append(button)
     command = " ".join(command)
     templateData = {'button':button}
-    subprocess.call(command, shell=True)
+    #subprocess.call(command, shell=True)
+    print(button)
     return "{} - OK".format(button)
     
 

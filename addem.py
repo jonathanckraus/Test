@@ -1,9 +1,8 @@
 from time import strftime
-def add(a, b):
-    return a + b
-a=3
-b=4
-print(f"The sum is {add(a, b)}   -")
+import mytools
+a=2;b=3;c=mytools.add(a,b)
+print(f"The sum of {a} and {b} is {c}")
+
 
 import requests
 
