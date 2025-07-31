@@ -21,15 +21,13 @@ def send_ir_command(button):
     if button == "KEY_POWER":
         command.append('Samsung2')
     else:
-        command.append('Samsung1')
+        command.append('Samsung4')
     command.append(button)
     command = " ".join(command)
     templateData = {'button':button}
     #subprocess.call(command, shell=True)
     print(button)
     return "{} - OK".format(button)
-    
-
 
 if __name__ == "__main__":
     print(curdir)
